@@ -36,3 +36,31 @@ const myFunction = function(){
 console.log(typeof bigNumber);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+/***************** Stack and Heap Memory ****************/ 
+
+// Stack (Primitive), Heap (Non-primitive)
+
+
+// Stack
+
+let myYoutubeName = "Diksha does"
+
+let anotherName = myYoutubeName
+anotherName = "Dikshasees"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// Heap
+
+let user1 = {
+    email: "user.gmail.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+user2.email = "newone.gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
